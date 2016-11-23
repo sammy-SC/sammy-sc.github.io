@@ -1,0 +1,450 @@
+<!doctype html>
+
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>eHealth – Elektronické zdravotníctvo</title>
+
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <!--
+
+        Impress.js doesn't depend on any external stylesheets. It adds all of the styles it needs for the
+        presentation to work.
+
+        This style below contains styles only for demo presentation. Browse it to see how impress.js
+        classes are used to style presentation steps, or how to apply fallback styles, but I don't want
+        you to use them directly in your presentation.
+
+        Be creative, build your own. We don't really want all impress.js presentations to look the same,
+        do we?
+
+        When creating your own presentation get rid of this file. Start from scratch, it's fun!
+
+    -->
+    <link href="css/impress-demo.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+<!--
+    For example this fallback message is only visible when there is `impress-not-supported` class on body.
+-->
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<!--
+
+    Now that's the core element used by impress.js.
+
+    That's the wrapper for your presentation steps. In this element all the impress.js magic happens.
+    It doesn't have to be a `<div>`. Only `id` is important here as that's how the script find it.
+
+    You probably won't need it now, but there are some configuration options that can be set on this element.
+
+    To change the duration of the transition between slides use `data-transition-duration="2000"` giving it
+    a number of ms. It defaults to 1000 (1s).
+
+    You can also control the perspective with `data-perspective="500"` giving it a number of pixels.
+    It defaults to 1000. You can set it to 0 if you don't want any 3D effects.
+    If you are willing to change this value make sure you understand how CSS perspective works:
+    https://developer.mozilla.org/en/CSS/perspective
+
+    But as I said, you won't need it for now, so don't worry - there are some simple but interesting things
+    right around the corner of this tag ;)
+
+-->
+<div id="impress">
+    <div class="step" data-x="850" data-y="3000" data-scale="625">
+        <h1 class="very-big">eHealth Elektronické zdravotníctvo</h1>
+    </div>
+
+    <div id="obsah" class="step" data-x="850" data-y="3000" data-scale="125">
+        <h1>Obsah</h1>
+        <ul>
+            <li>Ciele elektronického zdravotníctva eHealth</li>
+            <li>Spôsob pripájania sa poskytovateľov zdravotnej starostlivosti (PZS)</li>
+            <li>Prehľad služieb v pilotnej prevádzke do 1.1.2018</li>
+            <li>Benefity eHealthu pre poskytovateľov zdravotnej starostlivosti (PZS)</li>
+            <li>Legislatívne zmeny z dôvodu zavedenia eHealth</li>
+        </ul>
+    </div>
+
+    <div id="ciele" class="step" data-x="850" data-y="3000" data-scale="25">
+        <h1>Ciele elektronického zdravotníctva eHealth</h1>
+        <p><b>Cieľom elektronického zdravotníctva eHealth</b> je prostredníctvom informačných a komunikačných technológií výrazne prispieť k zlepšovaniu zdravotnej starostlivosti a tým aj k zvyšovaniu kvality života občanov.</p>
+        <p>Ciele projektu <b>Elektronické služby zdravotníctva</b> /ESZ, známy aj ako eSO1/:</li></p>
+        <ul>
+            <li>Webová stránka Národného portálu zdravia <a href="https://www.npz.sk">/www.npz.sk/</a></li>
+            <li><b>Elektronická zdravotná knižka občana, ePreskripcia/eMedikácia, eAlokácie</b></li>
+            <li>vytvorenie predpokladov pre integráciu informačného systému PZS s národným eHealth riešením</li>
+        </ul>
+    </div>
+
+    <div id="sposob" class="step" data-x="850" data-y="3000" data-scale="5">
+        <h1>Spôsob pripájania sa PZS</h1>
+        <ul>
+            <li>Aktualizácia údajov o výkone zdravotníckeho povolania podľa Vyhlášky Ministerstva zdravotníctva SR č. 9/2014 Z. z., prostredníctvom elektronického formulára R(MZ SR) 8-99 vo web aplikácii ISZI NCZI</li>
+            <li>Zosúladenie vydaných kódov PZS od ÚDZS s platným povolením od MZ SR / VÚC</li>
+            <li>Skontrolovať na: <a href="http://www.ezdravotnictvo.sk/Program-eHealth/Overenie_zhody_IS_PZS_IS_ZP/Stranky/default.aspx">http://www.ezdravotnictvo.sk/Program-eHealth/Overenie_zhody_IS_PZS_IS_ZP/Stranky/default.aspx</a>, či Váš informačný systém, ktorý používate, prešiel overením zhody</li>
+            <li>Kontaktovať dodávateľa informačného systému a informovať sa o možnosti pripojenia sa do eHealth. Požiadať o vydanie elektronické preukazu zdravotníckeho pracovníka, žiadosť je dostupná na: <a href="http://www.ezdravotnictvo.sk/Documents/CA_NCZI/ziadost_ePZP.pdf">http://www.ezdravotnictvo.sk/Documents/CA_NCZI/ziadost_ePZP.pdf</a></li>
+            <li>Podpísať zmluvu o vydaní elektronického preukazu zdravotníckeho pracovníka. Zmluva k nahliadnutiu obsahuje podrobnosti ku karte a postupoch k naštudovaniu, je dostupná na: <a href="http://www.ezdravotnictvo.sk/Documents/CA_NCZI/zmluva_ePZP.pdf">http://www.ezdravotnictvo.sk/Documents/CA_NCZI/zmluva_ePZP.pdf</a></li>
+            <li>Informovať sa o dátume pripojenia informačného systému do NZIS. Umožniť prístup dodávateľovi na miesto výkonu pre prípadnú inštaláciu čítačky kariet alebo iných potrebných inštalácií</li>
+            <li>Využívať NZIS a poskytovať spätnú väzbu v prípade problémov a obmedzení </li>
+        </ul>
+    </div>
+
+
+    <div id="prehlad" class="step" data-x="850" data-y="3000" data-scale="1">
+        <h1>Prehľad služieb v pilotnej prevádzke do 1.1.2018</h1>
+        <ul>
+            <li>Lekárske vyšetrenie (bez výmenného lístka)</li>
+            <li>Lekárske vyšetrenie s výmenným lístkom</li>
+            <li>eRecept – ePreskripcia a dispenzácia</li>
+            <li>Pacientsky sumár</li>
+        </ul>
+    </div>
+
+    <div id="lekarske-1" class="step" data-x="2050" data-y="3000" data-scale="1">
+        <h1>Lekárske vyšetrenie (bez výmenného lístka)</h1>
+        <ul>
+            <li><b>Pacient má s lekárom ambulantnej zdravotnej starostlivosti uzatvorenú dohodu o poskytovaní zdravotnej starostlivosti (tzv. kapitačný vzťah). Pacient nemusí mať elektronický identifikačný predmet</b></li>
+            <ul>
+                <li><b>ZapisZaznamOVysetreni</b> – všeobecný lekár zapíše záznam z vyšetrenia do NZIS, kde sa generuje pre záznam jednoznačný identifikátor</li>
+                <li>Ak má všeobecný lekár s pacientom dohodu (tzv. kapitačný vzťah), nepotrebuje súhlas na zobrazenie záznamu z odborného vyšetrenia - <b>DajZaznamOVysetreni</b> ako aj v prípade <b>VyhladajZaznamyOVysetreniach</b>, keď potrebuje vyhľadať záznamy o vyšetreniach za obdobie od, do</li>
+            </ul>
+        </ul>
+    </div>
+    <div id="lekarske-2" class="step" data-x="3250" data-y="3000" data-scale="1">
+        <h1>Lekárske vyšetrenie (bez výmenného lístka)</h1>
+        <ul>
+            <li><b>Pacient s lekárom (ambulantný, lôžkový) nemá uzatvorenú dohodu (tzv. kapitačný vzťah). Pacient ak má, použije elektronický občiansky preukaz (tzv. eID)</b></li>
+            <ul>
+                <li><b>ZapisZaznamOVysetreni</b> – nekapitovaný lekár, lekár špecialista zapíše záznam z odborného, zobrazovacieho vyšetrenia, prepúšťaciu správu do NZIS. NZIS generuje pre záznam jednoznačný identifikátor </li>
+                <li><b>DajZaznamOVysetreni</b> - zobrazí detail záznamu z odborného vyšetrenia na základe zadaného identifikátora záznamu o vyšetrení a identifikátora pacienta.  Lekár potrebuje súhlas pacienta, okrem prípadu, že je autorom záznamu. (Poznámka: väčší potenciál využitia je v prípade, ak nefunguje IS PZS; to by ale znamenalo, že používateľ má prístup k NZIS cez alternatívne GUI) </li>
+                <li><b>VyhladajZaznamyOVysetreniach</b> - lekár zadá vyhľadávacie kritériá: dátum od/do alebo typ hľadaného vyšetrenia- odborné alebo zobrazovacie vyšetrenie, prepúšťacia správa. Lekár potrebuje súhlas pacienta</li>
+            </ul>
+        </ul>
+    </div>
+
+    <div id="lekarske-vysetrenie" class="step" data-x="4450" data-y="3000" data-scale="1">
+        <h1>Lekárske vyšetrenie s výmenným lístkom</h1>
+        <ul>
+            <li>Scenár procesu pre zápis výsledku z odborného vyšetrenia a vyhľadania záznamov z odborných vyšetrení cez výmenné lístky na ďalšie, špecializované lekárske vyšetrenie. Každý lekársky záznam generuje jeden výmenný lístok (ďalej len „VL“)</li>
+            <li><b>Podmienka</b> - lekári majú cez svoj interný informačný softvér prístup do NZIS a majú vydané ePZP karty</li>
+            <li>IS PZS po úspešnom zápise správy prevezme identifikátor správy a externý identifikátor VL z NZIS</li>
+            <li><b>ZapisZaznamOVysetreni</b> – všeobecný lekár alebo lekár špecialista:</li>
+            <ul>
+                <li>zapíše záznam z vyšetrenia a súčasne zapíše požiadavku - VL, na špecializované vyšetrenie, odporúčanie na hospitalizáciu</li>
+                <li>následne IS PZS po úspešnom zápise správy prevezme externý identifikátor VL z NZIS</li>
+                <li>každý VL sa viaže ku konkrétnej lekárskej správe a má generovaný jednoznačný identifikátor z NZIS, ktorý je známy po uložení záznamu z vyšetrenia</li>
+                <li>lekárska správa má vygenerovaný pre záznam jednoznačný identifikátor interným systémom používateľa</li>
+                <li>lekár dá k dispozícii tento identifikátor pacientovi: vytlačením na VL / vytlačením do správy o vyšetrení, ak mu odovzdáva kópiu/ iným spôsobom (ručným poznačením). V prípade tlače je možné použiť priamo zápis ID alebo tlačiť čiarový kód s príslušným ID (pre čiarový kód nemáme štandard)</li>
+            </ul>
+            <li><b>Poznámka</b>: Tento proces nie je v súčasnosti metodicky upravený, resp. metodické usmernenie o vedení zdravotnej dokumentácie nepozná pojem jednoznačný identifikátor VL z NZIS</li>
+        </ul>
+    </div>
+
+    <div id="lekarske-vysetrenie-2" class="step" data-x="5650" data-y="3000" data-scale="1">
+        <h1>Lekárske vyšetrenie s výmenným lístkom</h1>
+        <ul>
+            <li>Služba <b>VyhladajZaznamyOVysetreniPreZiadatela</b> sprístupní VL, ak sa ako vstupné parametre zadajú:</li>
+            <ul>
+                <li>identifikátor pacienta</li>
+                <li>identifikátor VL (z NZIS)</li>
+                <li>identifikátor žiadateľa</li>
+            </ul>
+            <li><b>VL</b> je sprístupnený v nasledovných prípadoch:</li>
+            <ul>
+                <li>žiadateľ má explicitný súhlas pacienta</li>
+                <li>žiadateľ je autorom VL</li>
+                <li>identifikátor žiadateľa</li>
+                <li>útvar žiadateľa (ambulancia, oddelenie,...) prihláseného používateľa sa zhoduje s požadovanými údajmi na VL (špecializácia) a VL je platný</li>
+            </ul>
+        </ul>
+    </div>
+    <div id="erecept" class="step" data-x="6850" data-y="3000" data-scale="1">
+        <h1>eRecept – ePreskripcia a dispenzácia</h1>
+        <ul>
+            <li>Lekár zapíše preskripciu typu:</li>
+            <ul>
+                <li>Recept – predpis humánnych liekov predpisovaných originálnym názvom</li>
+                <li>Lekársky poukaz – predpis zdravotných pomôcok</li>
+            </ul>
+            <li>Oprávnená osoba pre výdaj v lekárni, výdajni zdravotných pomôcok vydá obsah preskripcie a vytvorí medikačný záznam</li>
+            <li>Scenár procesu predpísania eReceptu (vyhľadanie a vydanie humánneho lieku, individuálne pripravovaný liek, dietetická potravina alebo zdravotnícka pomôcka) pacientovi:</li>
+            <ul>
+                <li>Pacient má elektronický identifikačný predmet, tzv. eID, ktorý používa pri PZS. V lekárni je možné na základe neho automatizovane vyhľadať všetky nevydané eRecepty pacienta</li>
+                <li>Pacient má eID, ale v NZIS nie je eRecept, má len papierový recept</li>
+                <li>Pacient eID nedisponuje, takže v lekárni sa vyhľadávanie uskutočňuje na základe prepísania identifikátora pacienta na recepte</li>
+            </ul>
+            <li><b>Poznámka:</b> Pre pilotnú etapu bolo dohodnuté zjednodušenie pre neexistenciu údajov v registri liekov; korekcie po preverení opráv nahlásených v incidentoch</li>
+        </ul>
+    </div>
+    <div id="pacientsky" class="step" data-x="8050" data-y="3000" data-scale="1">
+        <h1>Pacientsky sumár</h1>
+        <ul>
+            <li>Ak sú pacientske údaje dostupné, všeobecný lekár musí v súlade s legislatívou (§6 zákon č. 153/2013 Z. z.) do pacientskeho sumára (PS) zapísať:</li>
+            <ul>
+                <li>Krvná skupina a Rh faktor (ak je známy)</li>
+                <li>Implantovaná zdravotná pomôcka</li>
+                <li>Stomatologická zdravotná pomôcka na mieru</li>
+                <li>Alergická anamnéza</li>
+                <li>Info o všeobecnom lekárovi s dohodou (kapitáciou) v rozsahu: meno a priezvisko, adresa prevádzky, kód zdravotníckeho pracovníka, názov a kód PZS, adresa elektronickej pošty</li>
+                <li>ICE kontaktnej osoby určenej osobou v rozsahu meno, priezvisko, telefónne číslo a adresa elektronickej pošty, ak je údaj známy</li>
+                <li>ID ZP</li>
+                <li>Dátum a čas poslednej aktualizácie</li>
+                <li>Údaje o položkách z dispenzačných alebo medikačných záznamov, za posledných 6 mesiacov</li>
+                <li>Kód a názov MKCH10 za posledných 6 mesiacov</li>
+            </ul>
+        </ul>
+    </div>
+
+    <div id="benefity" class="step" data-x="8650" data-y="3600" data-rotate="30" data-scale="1">
+        <h1>Benefity eHealthu pre PZS</h1>
+        <ul>
+            <li><b class="slightly-bigger">Komunikovať a motivovať členov lekárskych komôr:</b></li>
+            <ul>
+                <li>Rýchly prístup k zdravotným záznamom pacienta umožní zvýšiť kvalitu poskytovanej zdravotnej starostlivosti</li>
+                <li><i>„správne údaje, na správnom mieste, v správnom čase“</i></li>
+                <li>Zvýšenie platieb za výkony zo zdravotných poisťovní</li>
+                <li>Odstránenie duplicitných vyšetrení</li>
+                <li>Zníženie administratívnej záťaže na zdravotníckych pracovníkov</li>
+            </ul>
+            <li><b class="slightly-bigger">Lekárnické komory:</b></li>
+            <ul>
+                <li>Úspora nákladov a času pri pretypovaní jednotlivých receptov</li>
+            </ul>
+        </ul>
+    </div>
+
+    <div id="poskytuje" class="step" data-x="9250" data-y="4200" data-rotate="60" data-scale="1">
+        <h1>Čo poskytuje lekárom eHealth – projekt eSO1</h1>
+        <ul>
+            <li><b class="slightly-bigger">Identifikácia prijímateľa zdravotnej starostlivosti / pacient:</b></li>
+            <ul>
+                <li>Rodným číslom – u všeobecného kapitačného lekára</li>
+                <li>Preukazom poistenca alebo elektronickým občianskym preukazom (aktuálne v MPK návrh úpravy zákona č. 153/2013 Z. z.)</li>
+                <li>Vložením eID do čítačky</li>
+                <li>Odstránenie duplicitných vyšetrení</li>
+            </ul>
+        </ul>
+        <p><i>Preukaz poistenca je akceptovaný len pre občanov, ktorí nemajú ešte eID alebo zo zákona naň nemajú nárok</i></p>
+    </div>
+
+    <div id="poskytuje-2" class="step" data-x="9250" data-y="5400" data-rotate="90" data-scale="1">
+        <h1>Čo poskytuje lekárom eHealth – projekt eSO1</h1>
+        <ul>
+            <li><b class="slightly-bigger">Identifikácia zdravotníckeho pracovníka / lekára:</b></li>
+            <ul>
+                <li>Vložením karty - Elektronický preukaz zdravotníckeho pracovníka (ePZP)</li>
+                <li>ePZP je vydaný pre zdravotníckeho pracovníka na základe žiadosti a kontroly potvrdenia správnosti údajov evidovaných v príslušnej lekárskej komore a Registri zdravotníckych pracovníkov</li>
+                <li>Použitie ePZP je podmienené pripojením informačného systému do NZIS, ktorý lekár používa. Podmienkou je overenie zhody pre dodávateľa IS lekára</li>
+            </ul>
+        </ul>
+    </div>
+
+    <div id="poskytuje-3" class="step" data-x="8700" data-y="6300" data-rotate="120" data-scale="1">
+        <h1>Čo poskytuje lekárom eHealth – projekt eSO1</h1>
+        <ul>
+            <li><b class="slightly-bigger">Elektronická zdravotná knižka občana</b></li>
+            <ul>
+                <li>K záznamom pristupuje zdravotnícky pracovník po identifikovaní pacienta:</li>
+                <ul>
+                    <li>Pacientsky sumár</li>
+                    <li>Záznam o preventívnej prehliadke</li>
+                    <li>Záznam žiadanky na vyšetrenia spoločných vyšetrovacích a liečebných zložiek, vrátane popisu vzorky</li>
+                    <li>Záznam o výsledku vyšetrenia spoločných vyšetrovacích a liečebných zložiek</li>
+                    <li>Záznam o zásahu pri poskytnutí neodkladnej zdravotnej starostlivosti</li>
+                    <li>Záznam o odporúčaní lekára na špecializovanú ambulantnú zdravotnú starostlivosť</li>
+                    <li>Záznam o odporúčaní ošetrujúceho lekára na prijatie do ústavnej zdravotnej starostlivosti</li>
+                    <li>Záznam o poskytnutej ambulantnej zdravotnej starostlivosti</li>
+                    <li>Záznam o prepustení osoby z ústavnej zdravotnej starostlivosti</li>
+                    <li>Preskripčný záznam </li>
+                    <li>Dispenzačný záznam </li>
+                    <li>Medikačný záznam </li>
+                    <li>Záznam návrhu na zaradenie do zoznamu poistencov čakajúcich na poskytnutie plánovanej zdravotnej starostlivosti</li>
+                    <li>Zdravotnícky pracovník nemusí pristupovať k rozsiahlym zdravotníckym dátam </li>
+                    <li>Pre ľahšiu prehľadnosť bol vytvorený štruktúrovaný sumár, ktorý by mal poskytnúť základný prehľad a nepredlžoval vyšetrenie pacienta</li>
+                </ul>
+            </ul>
+        </ul>
+    </div>
+
+    <div id="poskytuje-4" class="step" data-x="7700" data-y="6800" data-rotate="150" data-scale="1">
+        <h1>Čo poskytuje lekárom eHealth – projekt eSO1</h1>
+        <ul>
+            <li><b class="slightly-bigger">Národný portál zdravia</b></li>
+            <ul>
+                <li>Je sprístupnený občanovi / zdravotníckemu pracovníkovi prostredníctvom webového prehliadača www.npz.sk</li>
+                <li>Obsahuje aj elektronickú zdravotnú knižku občana (prístup prostredníctvom eID a po zadaní bezpečnostného osobného kódu)</li>
+            </ul>
+        </ul>
+    </div>
+
+    <div id="jruz" class="step" data-x="6630" data-y="6970" data-rotate="180" data-scale="1">
+        <h1>Jednotná referenčná údajová základňa (JRÚZ):</h1>
+        <ul>
+            <li>Údajová základňa pozostáva z číselníkov a registrov, ktoré sú získavané z referenčných zdrojov ako napr. z CRP (ÚDZS),ŠÚ SR, MZ SR, ŠÚKL atď.</li>
+            <li>Údajovú základňu ďalej tvoria:</li>
+            <ul>
+                <li>Údaje z národných zdravotníckych administratívnych registrov, ktorými sú:</li>
+                <ul>
+                    <li>Národný register PZS</li>
+                    <li>Národný register zdravotníckych pracovníkov</li>
+                </ul>
+                <li>Údaje z číselníkov (napr. lieky, zdravotnícke výkony)</li>
+            </ul>
+            <li>Štandardy zdravotníckej informatiky zabezpečujú jednotnosť, bezpečnosť a integrovateľnosť dát využívaných v eHealth – riadia sa podľa vyhlášky č. 107/2015 Z. z.</li>
+            <li>Po zapojení do eHealth budú všetci PZS pracovať nad totožnými číselníkmi a registrami</li>
+        </ul>
+    </div>
+
+    <div id="legislativne" class="step" data-x="5430" data-y="6970" data-rotate="180" data-scale="1">
+        <h1>Legislatívne zmeny z dôvodu zavedenia eHealth</h1>
+        <p>Legislatívny rámec elektronického zdravotníctva je vymedzený zákonom:</p>
+        <p>Zákon č. 153/2013 Z. z. o národnom zdravotníckom informačnom systéme a o zmene a doplnení niektorých zákonov</p>
+        <ul>
+            <li>OBSAH:</li>
+            <ul>
+                <li>vymedzenie národného zdravotníckeho informačného systému</li>
+                <li>údajová základňa národného zdravotníckeho informačného systému</li>
+                <li>postup pri sprístupňovaní údajov z národného zdravotníckeho informačného systému</li>
+                <li>národné administratívne registre</li>
+                <li>národné zdravotné registre</li>
+                <li>štandardy zdravotníckej informatiky (vyhláška č. 107/2015 Z. z.)</li>
+                <li>zdravotnícka štatistika</li>
+                <li>postavenie a úlohy Národného centra zdravotníckych informácií</li>
+                <li>proces overovania zhody informačných systémov PZS</li>
+                <li>proces vydávania elektronických preukazov zdravotníckych pracovníkov</li>
+            </ul>
+        </ul>
+    </div>
+
+    <div id="legislativne-2" class="step" data-x="4230" data-y="6970" data-rotate="180" data-scale="1">
+        <h1>Legislatívne zmeny z dôvodu zavedenia eHealth</h1>
+        <p><b>Hlavné povinnosti PZS zo zákona: </b></p>
+        <ul>
+            <li>Všetci PZS sú povinní sa pripojiť do NZIS k 1.1.2018</li>
+            <li>Všetci zdravotnícki pracovníci sú povinní požiadať o Elektronický preukaz zdravotníckeho pracovníka do 31.10.2017</li>
+            <li>Všetci zdravotnícki pracovníci sú povinní zabezpečiť bezpečnosť svojho preukazu zdravotníckeho pracovníka</li>
+            <li>Všetci zdravotnícki pracovníci sú povinní identifikovať/autorizovať prijímateľa zdravotnej starostlivosti pred zápisom do NZIS </li>
+            <li>Všetci zdravotnícki pracovníci sú povinní zabezpečiť ochranu zdravotníckych dát v NZIS </li>
+            <li>Všeobecní kapitační lekári sú povinní zabezpečiť vyplnenie pacientskeho sumára do pol roka od plnej prevádzky NZIS (30.6.2018)</li>
+        </ul>
+    </div>
+
+    <div id="dakujeme" class="step" data-x="4230" data-y="6535" data-rotate="180" data-scale="1" data-rotate-x="90">
+        <h1>ĎAKUJEM ZA POZORNOSŤ</h1>
+        <p>„Správne nasadená liečba je jedným z najdôležitejších benefitov elektronizácie zdravotníctva. Ak vieme odstrániť riziko nežiaducich účinkov na základe údajov o pacientovi, stanovenie diagnózy a nastavenie liečby bude oveľa efektívnejšie.“</p>
+    </div>
+</div>
+
+<script>
+if ("ontouchstart" in document.documentElement) {
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<!--
+
+    Last, but not least.
+
+    To make all described above really work, you need to include impress.js in the page.
+    I strongly encourage to minify it first.
+
+    In here I just include full source of the script to make it more readable.
+
+    You also need to call a `impress().init()` function to initialize impress.js presentation.
+    And you should do it in the end of your document. Not only because it's a good practice, but also
+    because it should be done when the whole document is ready.
+    Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
+
+-->
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+<!--
+
+    The `impress()` function also gives you access to the API that controls the presentation.
+
+    Just store the result of the call:
+
+        var api = impress();
+
+    and you will get three functions you can call:
+
+        `api.init()` - initializes the presentation,
+        `api.next()` - moves to next step of the presentation,
+        `api.prev()` - moves to previous step of the presentation,
+        `api.goto( stepIndex | stepElementId | stepElement, [duration] )` - moves the presentation to the step given by its index number
+                id or the DOM element; second parameter can be used to define duration of the transition in ms,
+                but it's optional - if not provided default transition duration for the presentation will be used.
+
+    You can also simply call `impress()` again to get the API, so `impress().next()` is also allowed.
+    Don't worry, it wont initialize the presentation again.
+
+    For some example uses of this API check the last part of the source of impress.js where the API
+    is used in event handlers.
+
+-->
+
+</body>
+</html>
+
+<!--
+
+    Now you know more or less everything you need to build your first impress.js presentation, but before
+    you start...
+
+    Oh, you've already cloned the code from GitHub?
+
+    You have it open in text editor?
+
+    Stop right there!
+
+    That's not how you create awesome presentations. This is only a code. Implementation of the idea that
+    first needs to grow in your mind.
+
+    So if you want to build great presentation take a pencil and piece of paper. And turn off the computer.
+
+    Sketch, draw and write. Brainstorm your ideas on a paper. Try to build a mind-map of what you'd like
+    to present. It will get you closer and closer to the layout you'll build later with impress.js.
+
+    Get back to the code only when you have your presentation ready on a paper. It doesn't make sense to do
+    it earlier, because you'll only waste your time fighting with positioning of useless points.
+
+    If you think I'm crazy, please put your hands on a book called "Presentation Zen". It's all about
+    creating awesome and engaging presentations.
+
+    Think about it. 'Cause impress.js may not help you, if you have nothing interesting to say.
+
+-->
+
+<!--
+
+    Are you still reading this?
+
+    For real?
+
+    I'm impressed! Feel free to let me know that you got that far (I'm @bartaz on Twitter), 'cause I'd like
+    to congratulate you personally :)
+
+    But you don't have to do it now. Take my advice and take some time off. Make yourself a cup of coffee, tea,
+    or anything you like to drink. And raise a glass for me ;)
+
+    Cheers!
+
+-->
+
